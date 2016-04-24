@@ -1,0 +1,12 @@
+<assembly>
+  <id>api-specification</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <directory>src/main/api</directory>
+      <outputDirectory>/sample-rest/src/main/api</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

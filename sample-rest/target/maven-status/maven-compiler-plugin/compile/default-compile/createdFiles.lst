@@ -1,0 +1,5 @@
+com/rangaraj/sample/rest/model/CreateUserRequest.class
+com/rangaraj/sample/rest/model/CreateUserResponse.class
+com/rangaraj/sample/rest/resource/support/ResponseWrapper.class
+com/rangaraj/sample/rest/resource/UserResource$PostUserResponse.class
+com/rangaraj/sample/rest/resource/UserResource.class

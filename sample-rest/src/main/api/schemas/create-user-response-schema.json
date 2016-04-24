@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "title": "User",
+    "description": "User attributes",
+    "properties": {
+        "dbUserId" : {
+            "type" : "string",
+            "description" : "unique user id for the user in the database",
+            "required" : true
+        },
+        "userId" : {
+            "type" : "string",
+            "description" : "unique user id for the user in the system",
+            "required" : true
+        },
+        "message" : {
+            "type" : "string",
+            "description" : "Response message from the server",
+            "required" : true
+        }
+     }
+ }

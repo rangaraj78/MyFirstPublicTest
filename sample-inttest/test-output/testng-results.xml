@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[testAddUser, proper request test start]]>
+    </line>
+    <line>
+      <![CDATA[testAddUser, proper request test end]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1110" started-at="2016-04-24T05:08:24Z" finished-at="2016-04-24T05:08:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1110" started-at="2016-04-24T05:08:24Z" finished-at="2016-04-24T05:08:25Z">
+      <class name="com.rangaraj.sample.inttest.UserResourceIT">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.rangaraj.sample.inttest.UserResourceIT@7b49cea0]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="9" started-at="2016-04-24T00:08:24Z" finished-at="2016-04-24T00:08:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.rangaraj.sample.inttest.UserResourceIT@7b49cea0]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="440" started-at="2016-04-24T00:08:24Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-04-24T00:08:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.rangaraj.sample.inttest.UserResourceIT@7b49cea0]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2016-04-24T00:08:25Z" finished-at="2016-04-24T00:08:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rangaraj.sample.inttest.UserResourceIT.testAddUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testAddUser()[pri:0, instance:com.rangaraj.sample.inttest.UserResourceIT@7b49cea0]" name="testAddUser" duration-ms="644" started-at="2016-04-24T00:08:25Z" description="Test case for adding user happy path: http status response: 200 OK" finished-at="2016-04-24T00:08:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testAddUser, proper request test start]]>
+            </line>
+            <line>
+              <![CDATA[testAddUser, proper request test end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAddUser -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.rangaraj.sample.inttest.UserResourceIT@7b49cea0]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2016-04-24T00:08:25Z" finished-at="2016-04-24T00:08:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rangaraj.sample.inttest.UserResourceIT.testAddUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.rangaraj.sample.inttest.UserResourceIT@7b49cea0]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2016-04-24T00:08:25Z" finished-at="2016-04-24T00:08:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.rangaraj.sample.inttest.UserResourceIT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
