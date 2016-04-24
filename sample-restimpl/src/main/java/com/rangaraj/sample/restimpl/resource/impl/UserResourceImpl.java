@@ -10,6 +10,11 @@ import com.rangaraj.sample.rest.model.CreateUserResponse;
 import com.rangaraj.sample.rest.resource.UserResource;
 import com.rangaraj.sample.service.UserService;
 
+/**
+ * This is the implementation class for REST service UserResource
+ * @author rangarajthangadurai
+ *
+ */
 @Component
 public class UserResourceImpl implements UserResource {
 
@@ -18,6 +23,13 @@ public class UserResourceImpl implements UserResource {
 
 	private static final Logger logger = LoggerFactory.getLogger(UserResourceImpl.class);
 
+	/**
+	 * POST User 
+	 * 
+	 * @Param createUserRequest the instance of CreateUserRequest
+	 * @throws Exception in case of any issue in creating user
+	 * @return the PostUserResponse containing the db user id for newly created user
+	 */
 	@Override
 	public PostUserResponse postUser(CreateUserRequest createUserRequest) throws Exception {
 		logger.info("{}.postUser(), createUserRequest: {}", getClass().getName(), createUserRequest);

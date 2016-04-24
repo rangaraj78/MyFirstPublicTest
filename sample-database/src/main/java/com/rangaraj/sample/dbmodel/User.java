@@ -12,6 +12,13 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+/**
+ * This is the User entity for JPA
+ * 
+ * @author rangarajthangadurai
+ *
+ */
+
 @Entity
 @Table(name = "user", schema = "public", uniqueConstraints = @UniqueConstraint(name = "uq_user_user_id", columnNames = {
 		"user_id" }) , indexes = { @Index(name = "ix_user_id", columnList = "id") })

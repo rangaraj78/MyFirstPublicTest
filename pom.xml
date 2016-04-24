@@ -340,7 +340,6 @@
 		<module>sample-rest</module>
 		<module>sample-service</module>
 		<module>sample-restimpl</module>
-		<module>sample-converter</module>
 		<module>sample-war</module>
 	</modules>
 </project>

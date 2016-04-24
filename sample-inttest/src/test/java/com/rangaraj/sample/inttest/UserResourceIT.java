@@ -1,6 +1,5 @@
 package com.rangaraj.sample.inttest;
 
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
@@ -27,7 +26,10 @@ import com.rangaraj.sample.rest.model.CreateUserRequest;
 import com.rangaraj.sample.rest.model.CreateUserResponse;
 
 /**
- * Integration test for User API
+ * This is the integration test class to test UserResource
+ * 
+ * @author rangarajthangadurai
+ *
  */
 @ContextConfiguration(locations = { "classpath*:test-application-context.xml" })
 public class UserResourceIT extends AbstractTestNGSpringContextTests {
@@ -64,10 +66,12 @@ public class UserResourceIT extends AbstractTestNGSpringContextTests {
 					}
 				});
 
+		// Check whether user id matches from list of users retrieved from DB. This uses Stream functionality
+		// from Java 8
 		final List<CreateUserResponse> createUserResponsesFinalDB = createUserResponsesDB.stream()
 				.filter(createUserResponseDB -> createUserResponseDB.getUserId().equalsIgnoreCase(userId))
 				.collect(Collectors.toList());
-		
+
 		if (!createUserResponsesFinalDB.isEmpty()) {
 			CreateUserResponse createUserResponseDB = createUserResponsesFinalDB.get(0);
 			assertEquals(createUserResponseDB.getUserId(), userId);
